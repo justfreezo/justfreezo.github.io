@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="fr" >
+<head>
+  	<meta charset="UTF-8">
+  	<title>Contato de Paulo Martins</title>
+  	<link rel='stylesheet' type="text/css" href='../bootstrap/bootstrap.min.css'>
+  	<link rel="stylesheet" type="text/css" href="../css/style.css"> <!--Ajoute le type de css/text-->
+	<link rel="icon" type="image/x-icon" href="../img/Nebu.ico">
+	<script src="https://kit.fontawesome.com/0fa8908d05.js" crossorigin="anonymous"></script>
+</head>
+<body>	
+	<div class="navigation-wrap bg-light start-header start-style">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-md navbar-light">
+						<a class="navbar-brand" href="accueil.pt.html"><img src="../img/logo.png"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto py-4 py-md-0">
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="accueil.pt.html">Entrada</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="competences.pt.html">Habilidades</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="contact.pt.html">Contata-me</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Idiomas</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="contact.en.html">Inglés</a><!--Ajouter les index.fr.html etc-->
+										<a class="dropdown-item" href="contact.es.html">Espanhol</a>
+										<a class="dropdown-item" href="../contact.html">Francés</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					
+					</nav>		
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="conteneur2">
+        <h1>Contata-me</h1>
+        <p>Perguntas ou ideias a sugerir-me? Envie-me uma mensagem</p>
+        <form>
+            <div class="ligne">
+                <div class="colonne">
+                    <label for="nom">Nome</label>
+                    <input type="text" id="nom" placeholder="O vosso nome">
+                </div>
+                <div class="colonne">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="O vosso email">
+                </div>
+            </div>
+            <div class="ligne">
+                <div class="colonne">
+                    <label for="sujet">Assunto</label>
+                    <input type="text" id="sujet" placeholder="O vosso assunto ">
+                </div>
+                <div class="colonne">
+                    <label for="numero">N°Telemovel</label>
+                    <input type="tel" id="numero" placeholder="O vosso N°">
+                </div>
+            </div>
+            <div class="ligne">
+                <div class="colonne">
+                    <label for="probleme">Descreva o seu problema</label>
+                    <textarea id="probleme" placeholder="Quais problemas encontrou" rows="3"></textarea>
+                </div>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </div>
+    <script src='../js/jquery.min.js'></script>
+	<script src='../js/bootstrap.min.js'></script>
+</body>
+</html>
