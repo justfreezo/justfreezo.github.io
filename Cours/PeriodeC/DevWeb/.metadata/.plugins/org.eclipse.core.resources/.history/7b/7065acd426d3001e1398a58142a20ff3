@@ -1,0 +1,62 @@
+
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.ArrayList;
+
+/**
+ * Servlet implementation class ServletCatalogue
+ */
+@WebServlet("/Catalogue")
+public class ServletCatalogue extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private ArrayList<String> catalogue;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public ServletCatalogue() {
+        super();
+        this.catalogue = new ArrayList<>();
+    }
+    
+    public String getCatalogue() {
+    	StringBuilder sb = new StringBuilder();
+    	if(!catalogue.isEmpty()) {
+    		sb.append("Il y a ").append(catalogue.size()).append(" produits dans le catalogue :");
+    		sb.append(System.lineSeparator()).append(catalogue.getFirst());
+    		for(int i = 1 ; i < catalogue.size(); ++i) {
+    			sb.append(", ").append(catalogue.get(i));
+    		}
+    	}
+    	else {
+    		sb.append("Aucun produit dans le catalogue");
+    	}
+    	return sb.toString();
+    }
+    
+    public void addCatalogue(String produit) {
+    	catalogue.add(produit);
+    }
+    
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

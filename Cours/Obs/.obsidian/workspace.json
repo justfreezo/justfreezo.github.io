@@ -1,0 +1,157 @@
+{
+  "main": {
+    "id": "7f81bf0ad7b30a67",
+    "type": "split",
+    "children": [
+      {
+        "id": "029185e6898f7bb0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cf4d4f61c6d6ae94",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vocabulaire.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d415488efcab5b6f",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d9cbf378040c496",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b23c17b8dbb89b29",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cff791709fe89f97",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "remote",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3dabf1cc7bae0184",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "452c349c2375c6a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "da40a53ec9b2f30f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d427a41237efe8c8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Vocabulaire.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0d036564ddfe5585",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Vocabulaire.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c066879a33626a07",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ebedbc52d677ac19",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Vocabulaire.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b23c17b8dbb89b29",
+  "lastOpenFiles": [
+    "Untitled",
+    "2024-02-28.md",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "Vocabulaire.md"
+  ]
+}

@@ -1,0 +1,64 @@
+// Voiture.java
+package voiture;
+
+public class Voiture {
+  private String nom;
+  private int vitesse;
+  private IFreins freins;
+  private IMoteur moteur;
+
+  // Ce constructeur n'a plus e etre public, les voitures sont construites par
+  // l'usine
+  // public Voiture(String nom) {
+  // this(nom, new FreinsStandard(), new MoteurStandard());
+  // }
+
+  // Visibilite paquetage
+  Voiture(String nom, IFreins freins, IMoteur moteur) {
+    this.nom = nom;
+    this.vitesse = 0;
+    this.freins = freins;
+    this.moteur = moteur;
+  }
+
+  // Les 6 methodes suivantes sont 'final' car elles n'ont pas vocation e etre
+  // specialisees
+
+  public final String getNom() {
+    return nom;
+  }
+
+  public final int getVitesse() {
+    return vitesse;
+  }
+
+  public final void setVitesse(int v) {
+    vitesse = v;
+  }
+
+  @Override
+  public final String toString() {
+    return nom;
+  }
+
+  public final void freiner() {
+    freins.freiner(this);
+  }
+
+  public final void remplacerFreins(IFreins freins) {
+    this.freins = freins;
+  }
+
+  public final void reparerFreins() {
+    freins.reparer();
+  }
+
+  public final int getVitesseMaximale() {
+    return moteur.getVitesseMaximale(this);
+  }
+
+  public final void accelerer() {
+    moteur.accelerer(this);
+  }
+
+}

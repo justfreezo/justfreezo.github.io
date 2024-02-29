@@ -1,0 +1,25 @@
+package ver3;
+
+public class ConcurrentCarafe implements Carafe{
+	private Carafe carafe;
+	
+	public ConcurrentCarafe() {
+		this.carafe = new SimpleCarafe();
+	}
+
+	@Override
+	public synchronized void remplir() {
+		carafe.remplir();
+	}
+
+	@Override
+	public synchronized void retirer(int q) {
+		carafe.retirer(q);
+	}
+
+	@Override
+	public boolean estVide() {
+		return carafe.estVide();
+	}
+
+}

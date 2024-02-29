@@ -1,0 +1,8 @@
+INDEX VERSION 1.134+C:\Users\Freezo\Documents\Cours\BUT2\PeriodeC\QualitéDev\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1465362211.index
+4260111049.index
+3039513865.index
+1757054568.index
+1175128532.index
+1050024825.index

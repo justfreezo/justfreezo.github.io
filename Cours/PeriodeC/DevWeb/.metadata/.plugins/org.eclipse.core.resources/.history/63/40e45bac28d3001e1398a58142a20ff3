@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accueil</title>
+</head>
+<body>
+    <h1>Bienvenue sur le catalogue de produits</h1>
+    
+    <a href="Catalogue">Consulter le catalogue</a>
+    
+    <form action="Catalogue" method="post">
+        <label for="nomProd">Nom du produit :</label>
+        <input type="text" id="nomProd" name="nomProd">
+        <button type="submit">Ajouter un produit</button>
+    </form>
+</body>
+</html>

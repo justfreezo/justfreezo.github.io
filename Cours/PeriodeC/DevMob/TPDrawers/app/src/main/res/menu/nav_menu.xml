@@ -1,0 +1,12 @@
+<!-- nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_first"
+        android:title="Habitats" />
+    <item
+        android:id="@+id/nav_second"
+        android:title="Mon habitat" />
+    <item
+        android:id="@+id/nav_disconnect"
+        android:title="Disconnect" />
+</menu>

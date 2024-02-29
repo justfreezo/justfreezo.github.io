@@ -1,0 +1,13 @@
+package ver3;
+
+public interface Carafe {
+
+	void remplir();
+
+	void retirer(int q);
+
+	boolean estVide();
+
+	String toString();
+
+}

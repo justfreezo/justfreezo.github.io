@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">PowerHome</string>
+    <string name="auth_success">Successful Authentication</string>
+    <string name="auth_fail">Failed Authentication</string>
+</resources>

@@ -1,0 +1,20 @@
+package ver3;
+
+public class ConcurrentCarafe implements Carafe{
+
+	@Override
+	public void remplir() {
+		
+	}
+
+	@Override
+	public void retirer(int q) {
+		
+	}
+
+	@Override
+	public boolean estVide() {
+		return false;
+	}
+
+}

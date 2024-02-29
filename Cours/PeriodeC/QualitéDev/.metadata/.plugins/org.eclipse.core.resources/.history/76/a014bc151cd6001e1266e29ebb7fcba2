@@ -1,0 +1,14 @@
+package tp4;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TP4Test {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

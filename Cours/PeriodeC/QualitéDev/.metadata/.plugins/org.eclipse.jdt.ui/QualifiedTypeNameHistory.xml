@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="blackjack.BlackJack"/>
+    <fullyQualifiedTypeName name="java.lang.SafeVarargs"/>
+    <fullyQualifiedTypeName name="tp3.LeftPadUtils"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.params.provider.Arguments"/>
+    <fullyQualifiedTypeName name="net.jqwik.api.Property"/>
+    <fullyQualifiedTypeName name="net.jqwik.api.ForAll"/>
+    <fullyQualifiedTypeName name="net.jqwik.api.Arbitrary"/>
+    <fullyQualifiedTypeName name="net.jqwik.api.Arbitraries"/>
+    <fullyQualifiedTypeName name="net.jqwik.api.Provide"/>
+    <fullyQualifiedTypeName name="net.jqwik.api.Report"/>
+    <fullyQualifiedTypeName name="net.jqwik.api.Reporting"/>
+</qualifiedTypeNameHistroy>

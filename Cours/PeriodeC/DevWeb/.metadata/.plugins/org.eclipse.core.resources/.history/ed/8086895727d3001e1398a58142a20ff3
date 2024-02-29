@@ -1,0 +1,56 @@
+
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+
+/**
+ * Servlet implementation class ServletCatalogue
+ */
+@WebServlet("/Catalogue")
+public class ServletCatalogue extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private ArrayList<String> catalogue;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public ServletCatalogue() {
+        super();
+        this.catalogue = new ArrayList<>();
+    }
+    
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		
+		if(!catalogue.isEmpty()) {
+    		out.println("Il y a " + catalogue.size() + " produits dans le catalogue : <br>");
+    		out.println(catalogue.getFirst());
+    		for(int i = 1 ; i < catalogue.size(); ++i) {
+    			out.println(", " + catalogue.get(i));
+    		}
+    	}
+    	else {
+    		out.println("Aucun produit dans le catalogue");
+    	}
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String produit = request.getParameter("nomProd");
+    	catalogue.add(produit);
+    	response.sendRedirect("Catalogue");
+	}
+
+}

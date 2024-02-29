@@ -1,0 +1,7 @@
+INDEX VERSION 1.134
+C:\Users\Freezo\Documents\Cours\BUT2\PeriodeC\DevWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1169056921.index
+\tp2-web-jsp2\src\main\java
+C:\Users\Freezo\Documents\Cours\BUT2\PeriodeC\DevWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4022719175.index
+\tp2-web-jsp\src\main\java
+C:\Users\Freezo\Documents\Cours\BUT2\PeriodeC\DevWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1486406026.index
+\tpCatalogue\src\main\java

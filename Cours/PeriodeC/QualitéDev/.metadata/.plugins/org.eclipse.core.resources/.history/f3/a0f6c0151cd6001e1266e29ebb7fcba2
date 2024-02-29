@@ -1,0 +1,15 @@
+package tp4;
+
+import net.jqwik.api.ForAll;
+import net.jqwik.api.Property;
+import net.jqwik.api.Report;
+import net.jqwik.api.Reporting;
+
+class TP4Test {
+
+	@Property @Report(Reporting.GENERATED)
+	boolean absoluteValueOfAllNumberIsPositive(@ForAll int anInteger) {
+		return Math.abs(anInteger) >= 0;
+	}
+
+}

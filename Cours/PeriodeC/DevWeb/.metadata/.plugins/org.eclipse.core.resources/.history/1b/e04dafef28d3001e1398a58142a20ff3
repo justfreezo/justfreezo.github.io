@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accueil</title>
+</head>
+<body>
+    <h1>Bienvenue sur le catalogue de produits</h1>
+    
+    <a href="Catalogue">Consulter le catalogue</a>
+    <br>
+    <a href="catalogue.jsp">Ajouter un produit au catalogue</a>
+    
+</body>
+</html>

@@ -1,0 +1,3 @@
+INDEX VERSION 1.4+C:\Users\Freezo\Documents\Cours\BUT2\PeriodeC\DevWeb\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3343416051.index
+1486406026.index

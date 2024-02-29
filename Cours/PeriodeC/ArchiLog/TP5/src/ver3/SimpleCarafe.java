@@ -1,0 +1,40 @@
+package ver3;
+
+public class SimpleCarafe implements Carafe{
+	
+  private static int capacite_STANDARD = 100;
+  private int quantite;
+  private final int capacite;
+
+  public SimpleCarafe(int capacite) {
+    this.quantite = 0;
+    this.capacite = capacite;
+  }
+
+  public SimpleCarafe() {
+    this(capacite_STANDARD);
+  }
+
+  @Override
+public void remplir() {
+    quantite = capacite;
+  }
+
+  @Override
+public void retirer(int q) {
+    quantite -= q;
+    if (quantite <= 0) {
+      quantite = 0;
+    }
+  }
+
+  @Override
+public boolean estVide() {
+    return quantite == 0;
+  }
+
+  @Override
+  public String toString() {
+    return "La carafe contient " + quantite + "cl";
+  }
+}

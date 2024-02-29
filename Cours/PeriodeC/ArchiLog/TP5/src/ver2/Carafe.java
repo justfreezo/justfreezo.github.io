@@ -1,0 +1,37 @@
+package ver2;
+
+public class Carafe {
+	
+  private static int capacite_STANDARD = 100;
+  private int quantite;
+  private final int capacite;
+
+  public Carafe(int capacite) {
+    this.quantite = 0;
+    this.capacite = capacite;
+  }
+
+  public Carafe() {
+    this(capacite_STANDARD);
+  }
+
+  public void remplir() {
+    quantite = capacite;
+  }
+
+  public void retirer(int q) {
+    quantite -= q;
+    if (quantite <= 0) {
+      quantite = 0;
+    }
+  }
+
+  public boolean estVide() {
+    return quantite == 0;
+  }
+
+  @Override
+  public String toString() {
+    return "La carafe contient " + quantite + "cl";
+  }
+}

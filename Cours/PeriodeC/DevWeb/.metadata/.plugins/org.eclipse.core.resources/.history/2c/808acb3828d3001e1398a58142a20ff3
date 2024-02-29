@@ -1,0 +1,30 @@
+<%@ taglib uri="jakarta.tags.core"  prefix="c" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catalogue</title>
+</head>
+<body>
+    <h1>Catalogue de produits</h1>
+    <form action="Catalogue" method="post">
+        <label for="nomProd">Nom du produit :</label>
+        <input type="text" id="nomProd" name="nomProd">
+        <button type="submit">Ajouter un produit</button>
+    </form>
+    <br>
+    <h2>Liste des produits</h2>
+    <c:choose>
+        <c:when test="${empty products}">
+            Aucun produit dans le catalogue
+        </c:when>
+        <c:otherwise>
+            Il y a ${fn:length(products)} produits dans le catalogue<br>
+            Liste des produits :<br>
+            <c:forEach var="product" items="${products}">
+                ${product}<br>
+            </c:forEach>
+        </c:otherwise>
+    </c:choose>
+</body>
+</html>
