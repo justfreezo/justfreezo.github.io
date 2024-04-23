@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="fr" >
+<head>
+  	<meta charset="UTF-8">
+  	<title>Contact de Paulo Martins</title>
+  	<link rel='stylesheet' type="text/css" href='bootstrap/bootstrap.min.css'>
+  	<link rel="stylesheet" type="text/css" href="css/style.css"> <!--Ajoute le type de css/text-->
+	<link rel="icon" type="image/x-icon" href="img/Nebu.ico">
+	<script src="https://kit.fontawesome.com/0fa8908d05.js" crossorigin="anonymous"></script>
+</head>
+<body>	
+	<div class="navigation-wrap bg-light start-header start-style">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-md navbar-light">
+						<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto py-4 py-md-0">
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="index.html">Accueil</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="competences.html">Competences</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="contact.html">Me contacter</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Langues</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="langues/contact.en.html">Anglais</a><!--Ajouter les index.fr.html etc-->
+										<a class="dropdown-item" href="langues/accueil.es.html">Espagnol</a>
+										<a class="dropdown-item" href="langues/contact.pt.html">Portugais</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					
+					</nav>		
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="conteneur2">
+        <h1>Me contacter</h1>
+        <p>Avez vous des questions ou des idees? Envoyez moi un message</p>
+        <form>
+            <div class="ligne">
+                <div class="colonne">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" placeholder="Entrez votre nom">
+                </div>
+                <div class="colonne">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Entrez votre email">
+                </div>
+            </div>
+            <div class="ligne">
+                <div class="colonne">
+                    <label for="sujet">Sujet</label>
+                    <input type="text" id="sujet" placeholder="Entre votre sujet">
+                </div>
+                <div class="colonne">
+                    <label for="numero">N°Telephone</label>
+                    <input type="tel" id="numero" placeholder="Entrez votre N°">
+                </div>
+            </div>
+            <div class="ligne">
+                <div class="colonne">
+                    <label for="probleme">Decrivez votre problème</label>
+                    <textarea id="probleme" placeholder="Quel problème avez-vous rencontré" rows="3"></textarea>
+                </div>
+            </div>
+            <button>Envoyer</button>
+        </form>
+    </div>
+    <script src='js/jquery.min.js'></script>
+	<script src='js/bootstrap.min.js'></script>
+</body>
+</html>
